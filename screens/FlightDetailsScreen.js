@@ -3,17 +3,17 @@ import {Text} from "react-native";
 
 const FlightDetailsScreen = () => {
     return (
-        <Text>Flight Details Screen</Text>
+        <Text style={{fontFamily: "SFProTextRegular"}}>Flight Details Screen</Text>
     );
 };
 
-FlightDetailsScreen.navigationOptions = {
+FlightDetailsScreen.navigationOptions = () => ({
     title: 'Flight Details',
     headerTintColor: '#000000',
     headerStyle: {
         elevation: 0,
         shadowOpacity: 0
     }
-};
+});
 
 export default FlightDetailsScreen;
