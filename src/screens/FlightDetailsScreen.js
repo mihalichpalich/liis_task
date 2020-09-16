@@ -7,13 +7,4 @@ const FlightDetailsScreen = () => {
     );
 };
 
-FlightDetailsScreen.navigationOptions = () => ({
-    title: 'Flight Details',
-    headerTintColor: '#000000',
-    headerStyle: {
-        elevation: 0,
-        shadowOpacity: 0
-    }
-});
-
 export default FlightDetailsScreen;

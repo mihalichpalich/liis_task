@@ -1,21 +1,35 @@
-import React from 'react';
+import 'react-native-gesture-handler';
+import React, {useState, useEffect} from 'react';
 import {createAppContainer} from "react-navigation";
-import {createStackNavigator} from "react-navigation-stack";
+import {AppLoading} from 'expo';
+import * as Font from 'expo-font';
 
-import {FlightsListScreen, FlightsDetailsScreen} from './screens';
+import AppStackNavigator from "./AppStackNavigator";
 
-const AppNavigator = createStackNavigator(
-    {
-        FlightsList: {
-          screen: FlightsListScreen
-        },
-        FlightsDetails: {
-          screen: FlightsDetailsScreen
-        }
-    },
-    {
-        initialRouteName: 'FlightsList'
-    }
-);
+const AppContainer = createAppContainer(AppStackNavigator);
 
-export default createAppContainer(AppNavigator);
+let customFonts = {
+    'SF Pro Text Light': require('./assets/fonts/SFProTextLight.otf'),
+    'SF Pro Text Regular': require('./assets/fonts/SFProTextRegular.otf'),
+    'SF Pro Text Semibold': require('./assets/fonts/SFProTextSemibold.otf')
+};
+
+const App = () => {
+    const [fontsLoaded, setFontsLoaded] = useState(false);
+
+    useEffect(() => {
+        loadFontsAsync()
+    }, []);
+
+
+    const loadFontsAsync = async () => {
+        await Font.loadAsync(customFonts);
+        setFontsLoaded(true)
+    };
+
+    return (
+        fontsLoaded ? <AppContainer/> : <AppLoading/>
+    )
+};
+
+export default App;
