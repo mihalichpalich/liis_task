@@ -21,11 +21,14 @@ const AppStackNavigator = createStackNavigator(
             })
         },
         FlightDetails: {
-            screen: FlightDetailsScreen
+            screen: FlightDetailsScreen,
+            navigationOptions: ({navigation}) => ({
+                headerShown: false
+            })
         }
     },
     {
-        initialRouteName: 'FlightsList'
+        initialRouteName: 'FlightDetails'
     }
 );
 

@@ -4,8 +4,8 @@ import styled from "styled-components/native";
 const ScreenTitle = () => <Title>Flights</Title>;
 
 const Title = styled.Text`
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 26px;
+    margin-bottom: 8px;
     color: #000000;
     font-family: 'SF Pro Text Semibold';
     font-weight: 600;
