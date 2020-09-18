@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Ionicons} from "@expo/vector-icons";
 
 import * as styles from './styles';
@@ -8,13 +8,13 @@ import likeActive from "../../../assets/icons/flights-item-like-active.png";
 
 const FavouritesListItem = ({departure, arrival, airline, price}) => {
     return (
-        <styles.BrowseListItem>
-            <styles.BrowseListItemTop>
-                <styles.BrowseListItemIconPlane source={planeIcon}/>
+        <styles.FavouritesListItem>
+            <styles.FavouritesListItemTop>
+                <styles.FavouritesListItemIconPlane source={planeIcon}/>
 
-                <styles.BrowseListItemFlightInfoWrapper>
-                    <styles.BrowseListItemDirectionWrapper>
-                        <styles.BrowseListItemDirection>{departure.city}</styles.BrowseListItemDirection>
+                <styles.FavouritesListItemFlightInfoWrapper>
+                    <styles.FavouritesListItemDirectionWrapper>
+                        <styles.FavouritesListItemDirection>{departure.city}</styles.FavouritesListItemDirection>
                         <Ionicons
                             name="ios-arrow-round-forward"
                             size={24}
@@ -24,32 +24,32 @@ const FavouritesListItem = ({departure, arrival, airline, price}) => {
                                 marginRight: 12
                             }}
                         />
-                        <styles.BrowseListItemDirection>{arrival.city}</styles.BrowseListItemDirection>
-                    </styles.BrowseListItemDirectionWrapper>
+                        <styles.FavouritesListItemDirection>{arrival.city}</styles.FavouritesListItemDirection>
+                    </styles.FavouritesListItemDirectionWrapper>
 
-                    <styles.BrowseListItemDataRow>
-                        <styles.BrowseListItemData>{departure.airport_code}</styles.BrowseListItemData>
-                        <styles.BrowseListItemDataRowDash source={dash}/>
-                        <styles.BrowseListItemData>{departure.date}</styles.BrowseListItemData>
-                        <styles.BrowseListItemDataRowDash source={dash}/>
-                        <styles.BrowseListItemData>{departure.time}</styles.BrowseListItemData>
-                    </styles.BrowseListItemDataRow>
+                    <styles.FavouritesListItemDataRow>
+                        <styles.FavouritesListItemData>{departure.airport_code}</styles.FavouritesListItemData>
+                        <styles.FavouritesListItemDataRowDash source={dash}/>
+                        <styles.FavouritesListItemData>{departure.date}</styles.FavouritesListItemData>
+                        <styles.FavouritesListItemDataRowDash source={dash}/>
+                        <styles.FavouritesListItemData>{departure.time}</styles.FavouritesListItemData>
+                    </styles.FavouritesListItemDataRow>
 
-                    <styles.BrowseListItemData>{airline}</styles.BrowseListItemData>
-                </styles.BrowseListItemFlightInfoWrapper>
-            </styles.BrowseListItemTop>
+                    <styles.FavouritesListItemData>{airline}</styles.FavouritesListItemData>
+                </styles.FavouritesListItemFlightInfoWrapper>
+            </styles.FavouritesListItemTop>
 
-            <styles.BrowseListItemSeparator></styles.BrowseListItemSeparator>
+            <styles.FavouritesListItemSeparator></styles.FavouritesListItemSeparator>
 
-            <styles.BrowseListItemBottom>
-                <styles.BrowseListItemPriceLabel>Price:</styles.BrowseListItemPriceLabel>
-                <styles.BrowseListItemPrice>{price}</styles.BrowseListItemPrice>
-            </styles.BrowseListItemBottom>
+            <styles.FavouritesListItemBottom>
+                <styles.FavouritesListItemPriceLabel>Price:</styles.FavouritesListItemPriceLabel>
+                <styles.FavouritesListItemPrice>{price}</styles.FavouritesListItemPrice>
+            </styles.FavouritesListItemBottom>
 
-            <styles.BrowseListItemLikeWrapper>
-                <styles.BrowseListItemLike source={likeActive}/>
-            </styles.BrowseListItemLikeWrapper>
-        </styles.BrowseListItem>
+            <styles.FavouritesListItemLikeWrapper>
+                <styles.FavouritesListItemLike source={likeActive}/>
+            </styles.FavouritesListItemLikeWrapper>
+        </styles.FavouritesListItem>
     )
 };
 

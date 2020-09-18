@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-export const BrowseListItem = styled.TouchableOpacity`
+export const FavouritesListItem = styled.TouchableOpacity`
     margin-bottom: 20px;
     padding-top: 20px;
     padding-left: 20px;
@@ -11,26 +11,26 @@ export const BrowseListItem = styled.TouchableOpacity`
     elevation: 4;
 `;
 
-export const BrowseListItemTop = styled.View`
+export const FavouritesListItemTop = styled.View`
     flex-direction: row;
     margin-bottom: 10px;
 `;
 
-export const BrowseListItemIconPlane = styled.Image`
+export const FavouritesListItemIconPlane = styled.Image`
     width: 60px;
     height: 60px;
     margin-right: 20px;
 `;
 
-export const BrowseListItemFlightInfoWrapper = styled.View`
+export const FavouritesListItemFlightInfoWrapper = styled.View`
     flex-direction: column;
 `;
 
-export const BrowseListItemDirectionWrapper = styled.View`
+export const FavouritesListItemDirectionWrapper = styled.View`
     flex-direction: row;
 `;
 
-export const BrowseListItemDirection = styled.Text`
+export const FavouritesListItemDirection = styled.Text`
     font-family: SF Pro Text Light;
     font-size: 16px;
     line-height: 22px;    
@@ -38,15 +38,15 @@ export const BrowseListItemDirection = styled.Text`
     color: #000000;
 `;
 
-export const BrowseListItemDataRow = styled.View`
+export const FavouritesListItemDataRow = styled.View`
     flex-direction: row;
 `;
 
-export const BrowseListItemDataRowDash = styled.Image`
+export const FavouritesListItemDataRowDash = styled.Image`
     margin: 9px 5px;
 `;
 
-export const BrowseListItemData = styled.Text`
+export const FavouritesListItemData = styled.Text`
     font-family: SF Pro Text Regular;
     font-size: 13px;
     line-height: 18px;   
@@ -54,7 +54,7 @@ export const BrowseListItemData = styled.Text`
     color: #878787;
 `;
 
-export const BrowseListItemSeparator = styled.View`
+export const FavouritesListItemSeparator = styled.View`
     width: 283px;
     height: 1px;
     margin-bottom: 5px;
@@ -62,13 +62,13 @@ export const BrowseListItemSeparator = styled.View`
     border-radius: 2px;
 `;
 
-export const BrowseListItemBottom = styled.View`
+export const FavouritesListItemBottom = styled.View`
     flex-direction: row;
     justify-content: flex-end;
     padding-right: 22px;
 `;
 
-export const BrowseListItemPriceLabel = styled.Text`
+export const FavouritesListItemPriceLabel = styled.Text`
     margin-right: 8px;
     font-family: SF Pro Text Light;
     font-size: 11px;
@@ -77,7 +77,7 @@ export const BrowseListItemPriceLabel = styled.Text`
     color: #878787;
 `;
 
-export const BrowseListItemPrice = styled.Text`
+export const FavouritesListItemPrice = styled.Text`
     font-family: SF Pro Text Regular;
     font-size: 17px;
     line-height: 22px;    
@@ -85,13 +85,13 @@ export const BrowseListItemPrice = styled.Text`
     color: #000000;
 `;
 
-export const BrowseListItemLikeWrapper = styled.View`
+export const FavouritesListItemLikeWrapper = styled.View`
     position: absolute;
     top: 15px;
     right: 13px;
 `;
 
-export const BrowseListItemLike = styled.Image`
+export const FavouritesListItemLike = styled.Image`
     width: 17px;
     height: 15px;
 `;
