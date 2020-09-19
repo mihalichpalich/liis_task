@@ -1,10 +1,24 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {View, Image} from "react-native";
+import {Asset} from "expo-asset";
+import {AppLoading} from 'expo';
 
 import tabIndicatorIcon from '../../assets/icons/flights-list-tab-indicator.png'
+import * as Font from "expo-font";
 
 const TabIndicator = ({route}) => {
+    const [iconLoaded, setIconLoaded] = useState(false);
     let offsetLeft;
+
+    useEffect(() => {
+        loadIconAsync()
+    }, []);
+
+
+    const loadIconAsync = async () => {
+        await Asset.loadAsync(tabIndicatorIcon);
+        setIconLoaded(true)
+    };
 
     if (!route.getTabWidth()) {
         return null;
@@ -17,12 +31,17 @@ const TabIndicator = ({route}) => {
     }
 
     return (
-        <View style={{
-            left: offsetLeft,
-            top: 43
-        }}>
-            <Image source={tabIndicatorIcon}/>
-        </View>
+        <>
+            {iconLoaded
+                ? (<View style={{
+                        left: offsetLeft,
+                        top: 43
+                    }}>
+                        <Image source={tabIndicatorIcon}/>
+                    </View>)
+                : <AppLoading/>
+            }
+        </>
     )
 };
 

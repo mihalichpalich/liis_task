@@ -1,11 +1,13 @@
 import styled from "styled-components/native";
 
-export const FavouritesListItem = styled.TouchableOpacity`
+import * as mixins from '../../utils/mixins'
+
+export const FavouritesListItem = styled.View`
+    ${mixins.bgColorMain};
     margin-bottom: 20px;
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 6px;
-    background-color: #FFFFFF;
     border-radius: 8px;    
     shadow-radius: 3.5;
     elevation: 4;
@@ -31,11 +33,11 @@ export const FavouritesListItemDirectionWrapper = styled.View`
 `;
 
 export const FavouritesListItemDirection = styled.Text`
-    font-family: SF Pro Text Light;
-    font-size: 16px;
-    line-height: 22px;    
-    letter-spacing: -0.408px;   
-    color: #000000;
+    ${mixins.fontSizeMain};
+    ${mixins.fontFamilyLight};
+    ${mixins.letterSpacing};     
+    ${mixins.fontColorDark};
+    line-height: 22px;  
 `;
 
 export const FavouritesListItemDataRow = styled.View`
@@ -47,11 +49,11 @@ export const FavouritesListItemDataRowDash = styled.Image`
 `;
 
 export const FavouritesListItemData = styled.Text`
-    font-family: SF Pro Text Regular;
-    font-size: 13px;
-    line-height: 18px;   
-    letter-spacing: -0.408px;    
-    color: #878787;
+    ${mixins.fontFamilyRegular};
+    ${mixins.fontSizeInfo};
+    ${mixins.letterSpacing};     
+    ${mixins.fontColorGrey};
+    line-height: 18px;    
 `;
 
 export const FavouritesListItemSeparator = styled.View`
@@ -69,20 +71,20 @@ export const FavouritesListItemBottom = styled.View`
 `;
 
 export const FavouritesListItemPriceLabel = styled.Text`
+    ${mixins.fontFamilyLight};
+    ${mixins.fontSizeSmall};
+    ${mixins.letterSpacing};
+    ${mixins.fontColorGrey};  
     margin-right: 8px;
-    font-family: SF Pro Text Light;
-    font-size: 11px;
-    line-height: 26px;    
-    letter-spacing: -0.408px;    
-    color: #878787;
+    line-height: 26px;      
 `;
 
 export const FavouritesListItemPrice = styled.Text`
-    font-family: SF Pro Text Regular;
+    ${mixins.fontFamilyRegular};
+    ${mixins.letterSpacing};
+    ${mixins.fontColorDark};
     font-size: 17px;
     line-height: 22px;    
-    letter-spacing: -0.408px;    
-    color: #000000;
 `;
 
 export const FavouritesListItemLikeWrapper = styled.View`
