@@ -1,0 +1,112 @@
+{
+  "flights": [
+    {
+      "id": "d00af2c19edc45e6a656e9ab327cc93d",
+      "departure": {
+        "city": "Moscow",
+        "airport_code": "SVO",
+        "date": "30 September, 2020",
+        "time": "19:03"
+      },
+      "boarding": {
+        "city": "New York",
+        "airport_code": "JFK",
+        "date": "1 October, 2020",
+        "time": "5:03"
+      },
+      "airline": "Aeroflot",
+      "price": "23 924 ₽",
+      "favourite": false
+    },
+    {
+      "id": "7244311c68134dce8a408c1a668225a7",
+      "departure": {
+        "city": "Moscow",
+        "airport_code": "SVO",
+        "date": "30 September, 2020",
+        "time": "19:03"
+      },
+      "boarding": {
+        "city": "New York",
+        "airport_code": "JFK",
+        "date": "1 October, 2020",
+        "time": "5:03"
+      },
+      "airline": "Aeroflot",
+      "price": "23 924 ₽",
+      "favourite": false
+    },
+    {
+      "id": "feb62e6dd34a4f6ea17779b9e9b265b5",
+      "departure": {
+        "city": "Moscow",
+        "airport_code": "SVO",
+        "date": "30 September, 2020",
+        "time": "19:03"
+      },
+      "boarding": {
+        "city": "New York",
+        "airport_code": "JFK",
+        "date": "1 October, 2020",
+        "time": "5:03"
+      },
+      "airline": "Aeroflot",
+      "price": "23 924 ₽",
+      "favourite": false
+    },
+    {
+      "id": "7ca7f2a167214176a14e7ad865467b72",
+      "departure": {
+        "city": "Moscow",
+        "airport_code": "SVO",
+        "date": "30 September, 2020",
+        "time": "19:03"
+      },
+      "boarding": {
+        "city": "New York",
+        "airport_code": "JFK",
+        "date": "1 October, 2020",
+        "time": "5:03"
+      },
+      "airline": "Aeroflot",
+      "price": "23 924 ₽",
+      "favourite": false
+    },
+    {
+      "id": "05ddcd3ae9d44d5e8070332e5e283fee",
+      "departure": {
+        "city": "Moscow",
+        "airport_code": "SVO",
+        "date": "30 September, 2020",
+        "time": "19:03"
+      },
+      "boarding": {
+        "city": "New York",
+        "airport_code": "JFK",
+        "date": "1 October, 2020",
+        "time": "5:03"
+      },
+      "airline": "Aeroflot",
+      "price": "23 924 ₽",
+      "favourite": false
+    },
+    {
+      "id": "a2980b64fd07475b92d78f8fdbbf6ff1",
+      "departure": {
+        "city": "Moscow",
+        "airport_code": "SVO",
+        "date": "30 September, 2020",
+        "time": "19:03"
+      },
+      "boarding": {
+        "city": "New York",
+        "airport_code": "JFK",
+        "date": "1 October, 2020",
+        "time": "5:03"
+      },
+      "airline": "Aeroflot",
+      "price": "23 924 ₽",
+      "favourite": false
+    }
+  ]
+}
