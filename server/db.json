@@ -16,7 +16,7 @@
       },
       "airline": "Aeroflot",
       "price": "23 924 ₽",
-      "favourite": false
+      "favourite": true
     },
     {
       "id": "7244311c68134dce8a408c1a668225a7",
@@ -34,7 +34,7 @@
       },
       "airline": "Aeroflot",
       "price": "23 924 ₽",
-      "favourite": false
+      "favourite": true
     },
     {
       "id": "feb62e6dd34a4f6ea17779b9e9b265b5",

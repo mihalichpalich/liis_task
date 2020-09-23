@@ -3,6 +3,7 @@ import {
     LOAD_SUCCESS,
     LOAD_FAILURE,
     ADD_TO_FAVOURITES,
+    ADD_TO_FAVOURITES_AFTER_FETCHING,
     REMOVE_FROM_FAVOURITES,
     MAKE_FAVOURITE,
     MAKE_UNFAVOURITE
@@ -40,6 +41,11 @@ export const flightsReducer = (state = initialState, action) => {
             return {
                 ...state,
                 favouriteFlights: [...state.favouriteFlights, action.payload]
+            };
+        case ADD_TO_FAVOURITES_AFTER_FETCHING:
+            return {
+                ...state,
+                favouriteFlights: action.payload.slice()
             };
         case REMOVE_FROM_FAVOURITES:
             return {
