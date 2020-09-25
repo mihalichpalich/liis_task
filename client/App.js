@@ -1,8 +1,8 @@
 import 'react-native-gesture-handler';
 import React, {useEffect, useState} from 'react';
 import {AppLoading} from 'expo';
-import * as Font from 'expo-font';
 import {Provider} from 'react-redux';
+import { useFonts } from '@use-expo/font';
 
 import AppNavigator from "./AppNavigator";
 import store from './src/redux/store';
@@ -14,26 +14,16 @@ let customFonts = {
 };
 
 const App = () => {
-  const [fontsLoaded, setFontsLoaded] = useState(false);
-
-  useEffect(() => {
-    loadFontsAsync()
-  }, []);
-
-
-  const loadFontsAsync = async () => {
-    await Font.loadAsync(customFonts);
-    setFontsLoaded(true)
-  };
+  const [fontsLoaded] = useFonts(customFonts);
 
   return (
-      fontsLoaded
-          ? (
+      !fontsLoaded
+          ? <AppLoading/>
+          : (
               <Provider store={store}>
                   <AppNavigator/>
               </Provider>
           )
-          : <AppLoading/>
   )
 };
 

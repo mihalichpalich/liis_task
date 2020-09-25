@@ -23,7 +23,6 @@ const FlightDetailsScreen = ({
      makeFavourite,
      makeUnfavourite
 }) => {
-    console.log(route);
     const {departure, boarding, price} = route.params;
     const [like, setLike] = useState(true);
 
