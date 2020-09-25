@@ -22,7 +22,7 @@
 1. Серверная часть:
 ### `cd server && npm i && npm start`
 2. Клиентская часть (выполнить в отдельной вкладке терминала):
-### `cd client && expo install && expo start --android`
+### `cd client && npm install && npm start --android`
 
 <br />
 
