@@ -13,13 +13,13 @@ export const FlightDetailsScreenBackground = styled.ImageBackground`
 export const FlightDetailsScreenInfoWrapper = styled.View`
     ${mixins.bgColorMain};
     height: 100%;
-    top: -56px;    
+    top: -43px;    
     elevation: 1;
     border-radius: 30px;
 `;
 
 export const FlightDetailsScreenFlightInfo = styled.View`
-    padding: 27px 30px 0 27px;
+    padding: 30px 30px 0 27px;
     margin-bottom: 18px;
 `;
 
@@ -58,7 +58,7 @@ export const FlightDetailsScreenDirectionArrow = styled.Image`
 export const FlightDetailsScreenHighlighted = styled.ImageBackground`
     flex-direction: row;
     width: 307px; 
-    height: 80px;
+    height: 84px;
     padding: 15px 45px;
 `;
 

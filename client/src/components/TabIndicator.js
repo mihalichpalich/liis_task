@@ -4,7 +4,6 @@ import {Asset} from "expo-asset";
 import {AppLoading} from 'expo';
 
 import tabIndicatorIcon from '../../assets/icons/flights-list-tab-indicator.png'
-import * as Font from "expo-font";
 
 const TabIndicator = ({route}) => {
     const [iconLoaded, setIconLoaded] = useState(false);

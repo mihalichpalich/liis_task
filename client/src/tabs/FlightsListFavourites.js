@@ -1,32 +1,25 @@
 import React from 'react';
 import styled from "styled-components/native";
-import {FlatList, Animated} from 'react-native';
+import {FlatList} from "react-native";
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 
-import {FavouritesListItemAnimated} from "../components/animated";
-
-const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
+import {FavouritesListItem} from "../components";
 
 const FlightsListFavourites = ({navigation, favouriteFlights}) => {
-    const y = new Animated.Value(0);
-    const onScroll = Animated.event([{nativeEvent: {contentOffset: {y}}}], {useNativeDriver: true});
-
     return (
         <Container>
-            <AnimatedFlatList
-                bounces={false}
-                scrollEventThrottle={16}
-                data={favouriteFlights}
-                keyextractor={(item, index) => index}
-                renderItem={({item, index}) => <FavouritesListItemAnimated
-                    item={item}
-                    y={y}
-                    index={index}
-                    navigate={navigation.navigate}
-                />}
+            <FlatList
                 showsVerticalScrollIndicator={false}
-                {...{onScroll}}
+                distanceBetweenItem={20}
+                data={favouriteFlights}
+                keyExtractor={(item, index) => index.toString()}
+                renderItem={({item, index}) => (
+                    <FavouritesListItem
+                        item={item}
+                        key={index}
+                        navigate={navigation.navigate}
+                    />)}
             />
         </Container>
     )

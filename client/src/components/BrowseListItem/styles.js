@@ -7,7 +7,7 @@ export const BrowseListItem = styled.View`
     margin-bottom: 20px;
     padding-top: 20px;
     padding-left: 20px;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
     border-radius: 8px;    
     shadow-radius: 3.5;
     elevation: 2;
@@ -59,7 +59,7 @@ export const BrowseListItemData = styled.Text`
 export const BrowseListItemSeparator = styled.View`
     width: 283px;
     height: 1px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     background: rgba(196, 196, 196, 0.5);
     border-radius: 2px;
 `;

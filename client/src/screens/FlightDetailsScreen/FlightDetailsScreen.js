@@ -17,24 +17,25 @@ import {addToFavourites, removeFromFavourites, makeFavourite, makeUnfavourite} f
 const images = [{src: carouselImage1}, {src: carouselImage2}];
 
 const FlightDetailsScreen = ({
-     navigation,
+     route,
      addToFavourites,
      removeFromFavourites,
      makeFavourite,
      makeUnfavourite
 }) => {
-    const {departure, boarding, price} = navigation.state.params;
+    console.log(route);
+    const {departure, boarding, price} = route.params;
     const [like, setLike] = useState(true);
 
     const onLikeChange = () => {
         if (!like) {
             setLike(true);
-            addToFavourites(navigation.state.params);
-            makeFavourite(navigation.state.params)
+            addToFavourites(route.params);
+            makeFavourite(route.params)
         } else {
             setLike(false);
-            removeFromFavourites(navigation.state.params);
-            makeUnfavourite(navigation.state.params)
+            removeFromFavourites(route.params);
+            makeUnfavourite(route.params)
         }
     };
 

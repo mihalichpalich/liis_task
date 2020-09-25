@@ -1,2 +1,2 @@
 export {default as FlightsListScreen} from './FlightsListScreen';
-export {default as FlightDetailsScreen} from './FlightDetailsScreen/FlightDetailsScreen';
+export {default as FlightDetailsScreen} from './FlightDetailsScreen/FlightDetailsScreen.js';
