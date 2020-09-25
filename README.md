@@ -24,12 +24,16 @@
 2. Клиентская часть (выполнить в отдельной вкладке терминала):
 ### `cd client && npm install && npm start --android`
 
+#### Внимание!
+Если после запуска приложения, у вас появляется ошибка `fontFamily ... is not a system font`, остановите клиентскую часть приложения в консоли нажав `Ctrl + C`, затем наберите в консоли: 
+### `cd client && npm install --save @use-expo/font && npm start`
+
 <br />
 
 ## Стек технологий
-* Expo 36.0.1
-* React Native 0.61
-* React Navigation 4.3.1
+* Expo 38.0.0
+* React Native 0.62
+* React Navigation 5.3.0
 * styled-components
 * Redux
 * Redux-Saga
